@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Repo Jump</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="head">
+    <span class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">Repo Jump</span>
+    </span>
+    <span id="repo" class="repo"></span>
+  </header>
+
+  <main class="body">
+    <ul id="list" class="list" role="list" hidden></ul>
+    <div id="empty" class="empty" hidden>
+      <p id="empty-title" class="empty-title"></p>
+      <p id="empty-hint" class="empty-hint"></p>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <span id="status" class="status" role="status" aria-live="polite"></span>
+    <span id="keys" class="keys"></span>
+  </footer>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
